@@ -1,0 +1,19 @@
+.userBar {
+  background: #2f2f2f;
+  position: fixed;
+  display: flex;
+  height: 40px;
+  padding-inline: 20px;
+  padding-right: 80px;
+  justify-content: space-between;
+  font-size: 15px;
+  width: 100vw;
+  padding-top: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 100;
+  direction: rtl;
+  p {
+    color: #ccc;
+  }
+}

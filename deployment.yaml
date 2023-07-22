@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: parking-front
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: parking-front
+  template:
+    metadata:
+      labels:
+        app: parking-front
+    spec:
+      containers:
+        - name: parking-front
+          image: farazff/parking-front:1.0
+          ports:
+            - containerPort: 8080
+          resources:
+            limits:
+              cpu: "0.5"
+              memory: 256Mi
+              ephemeral-storage: 500Mi
+            requests:
+              cpu: "0.5"
+              memory: 256Mi
+              ephemeral-storage: 500Mi
