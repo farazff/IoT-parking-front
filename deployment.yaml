@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: parking-front
-          image: farazff/parking-front:1.0
+          image: farazff/parking-front:1.2
           ports:
             - containerPort: 8080
           resources:
